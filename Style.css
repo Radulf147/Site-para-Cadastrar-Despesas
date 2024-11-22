@@ -1,0 +1,196 @@
+@font-face {
+    font-family:banhschrift11; src: url(/fontes/banhschrift11.ttf);
+ }
+ 
+ @font-face {
+    font-family:Kano; src: url(/fontes/Kano.otf);
+ }
+ 
+ @font-face {
+    font-family:Vera; src: url(/fontes/Vera.otf);
+ }
+ 
+ @font-face {
+    font-family:Casta; src: url(/fontes/Casta.otf);
+ }
+ 
+ @font-face {
+    font-family:Blackpast; src: url(/fontes/Blackpast.otf);
+ }
+ 
+ @font-face {
+    font-family:Analogist; src: url(/fontes/Analogist.otf);
+ }
+ 
+ root{
+   font-size: 10px;
+   }
+ 
+ /*navbar*/
+ #nav{
+   float: left;
+   display: flex;
+   justify-content: left;
+   width: 15rem;
+   text-align: center;
+   padding: 0.5rem;
+   border-style: solid;
+   border-width: thin;
+   border-color: rgb(85, 108, 138);
+ }
+ 
+ .Preloader {
+   display: inline-block;
+   position: fixed;
+   background-size: 20%;
+ }
+ .Preloader div {
+   display: block;
+   position: absolute;
+   left: 1rem;
+   width: 1.5rem;
+   background: rgb(0, 0, 0, 0.5);
+   box-shadow: 0.1rem 0.2rem 0.1rem white;
+   animation: Preloader 2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+ }
+ .Preloader div:nth-child(1) {
+   left: 1rem;
+   animation-delay: -0.30s;
+ }
+ .Preloader div:nth-child(2) {
+   left: 3rem;
+   animation-delay: -0.15s;
+ }
+ .Preloader div:nth-child(3) {
+   left: 5rem;
+   animation-delay: 0;
+ }
+ @keyframes Preloader {
+   0% {
+     top: 1rem;
+     height: 6rem;
+   }
+   50%, 100% {
+     top: 2rem;
+     height: 2rem;
+   }
+ }
+ 
+ 
+ .links{
+   color: white;
+   font-size: 1.5rem;
+ }
+ 
+ .links:hover{
+   text-decoration: line-through;
+   color: rgb(85, 108, 138);
+   text-shadow: 0.5rem 0.5rem 0.5rem black;
+ }
+ 
+ .flexboxrow {
+   display: flex;
+   justify-content: center;
+   height: 100%;
+   }
+ 
+ .flexboxcolumn {
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   }
+   
+ .AppName, .TittleLetter {
+   color: white;
+   font-family:'Casta';
+   text-align: center;
+   font-size: 2.5rem;
+   }
+   
+ .AppName {
+   color: rgb(168, 134, 90);
+   font-family:'Blackpast';
+   font-size: 2rem;
+   padding-top: 3rem;
+   text-shadow: 0.3rem 0.3rem 0.3rem black;
+ }
+ 
+ #BeginText { 
+   width: 100%;
+   text-align: justify;
+   display : inline-block;
+   margin-bottom: -0.5rem;
+ }
+   
+ /*TEXTBOXES*/
+ .TextBase{
+   float: right;
+   text-align: center;
+   padding: 1rem;
+   margin: 1rem;
+   }
+   
+ .ListColumn, .ListRow {
+   list-style: none;
+   list-style-position: outside;
+   padding: 0rem;
+ }
+ 
+ .ListRow {
+   width: auto;
+ }
+ 
+ .fa {
+   color: white;
+ }
+   
+ #TextBox, #tbLogin {
+   background-color: rgba(19, 23, 32, 0.7);
+   padding: 1rem;
+   margin: 0.5rem;
+   text-align: right;
+   }
+   
+ #tbLogin {
+   /*background-color: rgb(31, 109, 109);*/
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   }
+   
+ .SpecialInfo, .GenInfo {
+   color: white;
+   font-size: 1.2rem;
+   box-shadow: 0.3rem 0.3rem 0.3rem;
+   padding: 1rem;
+   margin: 1rem;
+   }
+ 
+ .SpecialInfo{
+   background-color: white;
+   color: black;
+   }
+   
+ .Button {
+   background-color: black;
+   border-radius: 1rem;
+   color: white;
+   font-family:'Casta';
+   font-size: 1rem;
+   padding: 0.3rem;
+   width: 20%;
+   margin: 0.5rem;
+   text-align: center;
+   }
+ 
+ html, body {
+   background-color: rgb(14, 18, 25);
+   background-image: url("https://i.pinimg.com/750x/9d/8a/11/9d8a11fb3e2557d4d6dca0600c8f59f8.jpg");
+   color: white;
+   font-family:'Casta';
+   text-align: center;
+   font-size: 1rem;
+   height: 100%;
+ }
+ 
